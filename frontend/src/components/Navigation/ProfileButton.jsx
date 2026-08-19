@@ -50,7 +50,7 @@ function ProfileButton({ user }) {
           <>
             <li>{user.username}</li>
             <li>
-              {user.firstName} {user.lastName}
+              {user.firstname} {user.lastname}
             </li>
             <li>{user.email}</li>
             <li>
