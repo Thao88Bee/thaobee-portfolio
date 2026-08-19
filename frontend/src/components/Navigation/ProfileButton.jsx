@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { FaUserCircle } from "react-icons/fa";
 import * as sessionActions from "../../store/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
-import SignupFormModal from "../SignupFormModal";
+// import SignupFormModal from "../SignupFormModal";
+import logo from "/favicon.ico";
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -42,9 +42,12 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <button onClick={toggleMenu}>
-        <FaUserCircle />
-      </button>
+      <img
+        className="logo-img"
+        onClick={toggleMenu}
+        src={logo}
+        alt="Bee Thao Logo"
+      />
       <ul className={ulClassName} ref={ulRef}>
         {user ? (
           <>
@@ -59,16 +62,18 @@ function ProfileButton({ user }) {
           </>
         ) : (
           <>
-            <OpenModalMenuItem
-              itemText="Log In"
-              onItemClick={closeMenu}
-              modalComponent={<LoginFormModal />}
-            />
-            <OpenModalMenuItem
+            <button>
+              <OpenModalMenuItem
+                itemText="Log In"
+                onItemClick={closeMenu}
+                modalComponent={<LoginFormModal />}
+              />
+            </button>
+            {/* <OpenModalMenuItem
               itemText="Sign Up"
               onItemClick={closeMenu}
               modalComponent={<SignupFormModal />}
-            />
+            /> */}
           </>
         )}
       </ul>
