@@ -1,5 +1,6 @@
 "use strict";
 
+const { adminEmail, adminPassword, adminUsername } = require("../../config");
 const { User } = require("../models");
 const bcrypt = require("bcryptjs");
 
@@ -13,11 +14,11 @@ module.exports = {
     await User.bulkCreate(
       [
         {
-          username: "Demo-user",
-          firstname: "Demo",
-          lastname: "User",
-          email: "demo@user.io",
-          hashedPassword: bcrypt.hashSync("testing"),
+          username: adminUsername,
+          firstname: "Bee",
+          lastname: "Thao",
+          email: adminEmail,
+          hashedPassword: bcrypt.hashSync(adminPassword),
         },
       ],
       { validate: true },
@@ -30,7 +31,7 @@ module.exports = {
     return queryInterface.bulkDelete(
       options,
       {
-        username: { [Op.in]: ["Demo-user"] },
+        username: { [Op.in]: [adminUsername] },
       },
       {},
     );
