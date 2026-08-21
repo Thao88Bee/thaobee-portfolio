@@ -1,0 +1,39 @@
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  height: 100dvh;
+  min-height: 500px;
+
+  .heroImg {
+    max-width: 200px;
+  }
+
+  span {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+    a {
+      color: rgb(0, 128, 0);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: rgb(255, 0, 0);
+    }
+  }
+}
+
+.heroInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  align-self: center;
+  max-width: 30ch;
+}

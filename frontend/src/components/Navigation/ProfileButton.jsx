@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
-// import SignupFormModal from "../SignupFormModal";
 import logo from "/favicon.ico";
 
 function ProfileButton({ user }) {
