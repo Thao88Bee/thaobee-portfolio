@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { useModal } from "../../context/Modal";
 import "./LoginForm.css";
 
-function LoginFormModal() {
+function LoginFormModal({ navigate }) {
   const dispatch = useDispatch();
   const [credential, setCredential] = useState("");
   const [password, setPassword] = useState("");
@@ -21,7 +21,8 @@ function LoginFormModal() {
         if (data && data.errors) {
           setErrors(data.errors);
         }
-      });
+      })
+      .finally(navigate(""));
   };
 
   return (
