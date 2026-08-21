@@ -15,7 +15,7 @@ function Navigation({ isLoaded }) {
   return (
     <>
       <div className="navBar">
-        <div className="navBtn">
+        <div className="navBtnContainer">
           <button onClick={(e) => goTo(e, "")}>Bee Thao</button>
           <button onClick={(e) => goTo(e, "projects")}>Projects</button>
           <button onClick={(e) => goTo(e, "skills")}>Skills</button>

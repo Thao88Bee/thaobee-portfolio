@@ -2,17 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  button {
-    color: rgb(0, 128, 0);
-  }
-
-  button:hover {
-    color: rgb(255, 0, 0);
-  }
 }
 
-.navBtn {
+.navBtnContainer {
   display: flex;
   gap: 20px;
 }
