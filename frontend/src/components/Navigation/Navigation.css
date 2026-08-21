@@ -2,16 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.LoginNavBar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 10px 0 10px;
 }
 
 .navBtnContainer {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .profile-dropdown {
   position: absolute;
-  right: 0.5rem;
+  right: 1rem;
   text-align: end;
 }
 
@@ -21,10 +29,6 @@
 
 .logo-img {
   height: 5dvh;
-  cursor: pointer;
-}
-
-button {
   cursor: pointer;
 }
 
