@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import Admin from "../Admin/Admin";
 import heroImg from "/hero-img.png";
 
 import "./Hero.css";
@@ -18,9 +19,7 @@ function Hero() {
             />
           </div>
           <div className="heroInfoContainer">
-            <h1>
-              Bee <br /> Thao
-            </h1>
+            <h1>Bee Thao</h1>
             <h2>Software Engineer</h2>
             <span>
               <button>
@@ -52,15 +51,7 @@ function Hero() {
           </div>
         </section>
       ) : (
-        <section className="heroSection">
-          <div className="heroImgContainer">
-            <img
-              className="heroImg"
-              src={heroImg}
-              alt="Bee Thao Profile Picture"
-            />
-          </div>
-        </section>
+        <Admin heroImg={heroImg} />
       )}
     </>
   );
