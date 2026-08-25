@@ -49,7 +49,7 @@ function LoginFormModal({ navigate }) {
             />
           </label>
           {errors.credential && <p>{errors.credential}</p>}
-          <button type="submit">Log In</button>
+          <button>Log In</button>
         </form>
       </div>
     </section>

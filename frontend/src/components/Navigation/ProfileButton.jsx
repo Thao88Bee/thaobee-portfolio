@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
-import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
 import { BsEnvelopePaper } from "react-icons/bs";
+import OpenModalButton from "../OpenModalButton/OpenModalButton";
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -60,13 +60,11 @@ function ProfileButton({ user }) {
           </>
         ) : (
           <>
-            <button>
-              <OpenModalMenuItem
-                itemText="Log In"
-                onItemClick={closeMenu}
-                modalComponent={<LoginFormModal navigate={navigate} />}
-              />
-            </button>
+            <OpenModalButton
+              buttonText="Log In"
+              onButtonClick={closeMenu}
+              modalComponent={<LoginFormModal navigate={navigate} />}
+            />
           </>
         )}
       </ul>
