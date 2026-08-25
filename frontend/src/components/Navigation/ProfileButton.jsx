@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
 import OpenModalMenuItem from "./OpenModalMenuItem";
 import LoginFormModal from "../LoginFormModal";
-import logo from "/favicon.ico";
+import { BsEnvelopePaper } from "react-icons/bs";
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -43,12 +43,9 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <img
-        className="logo-img"
-        onClick={toggleMenu}
-        src={logo}
-        alt="Bee Thao Logo"
-      />
+      <button onClick={toggleMenu}>
+        <BsEnvelopePaper className="envelopeIcon" />
+      </button>
       <ul className={ulClassName} ref={ulRef}>
         {user ? (
           <>

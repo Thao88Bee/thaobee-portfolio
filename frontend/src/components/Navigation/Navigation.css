@@ -32,6 +32,11 @@
   }
 }
 
+.envelopeIcon {
+  width: 20px;
+  height: 20px;
+}
+
 .profile-dropdown {
   position: absolute;
   right: 1rem;
