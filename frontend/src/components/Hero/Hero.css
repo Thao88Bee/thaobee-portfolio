@@ -11,12 +11,12 @@
     max-width: 200px;
   }
 
-  span {
+  :is(span) {
     display: flex;
     gap: 25px;
     justify-content: center;
 
-    a {
+    :is(a) {
       color: rgb(0, 128, 0);
       text-decoration: none;
     }
