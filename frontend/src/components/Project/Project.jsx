@@ -15,7 +15,7 @@ function Project() {
         </a>
         <h2>Poultry Center</h2>
         <p>
-          Web application all about poultry and poultry lovers sharing
+          A web application all about poultry for poultry lovers, sharing
           idea&apos;s and concern&apos;s or just fun facts.
         </p>
       </div>
