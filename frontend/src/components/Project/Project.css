@@ -1,0 +1,34 @@
+.projectSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 90dvh;
+  min-height: 500px;
+}
+
+.poultryCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  :is(a) {
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  :is(img) {
+    height: 20dvh;
+  }
+
+  :is(p) {
+    width: 200px;
+  }
+}
