@@ -1,5 +1,22 @@
 :root {
-  background-color: rgb(165, 165, 165);
+  --background-color: rgb(255, 255, 255);
+  --btn-text-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+}
+
+[data-theme="dark"] {
+  --background-color: rgb(0, 0, 0);
+  --btn-text-color: rgb(255, 255, 255);
+  --text-color: rgb(255, 255, 255);
+
+  .lightMoon {
+    color: white;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 button {
