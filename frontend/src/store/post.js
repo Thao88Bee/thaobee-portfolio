@@ -9,15 +9,10 @@ export const getAllPostsAction = (posts) => {
 
 export const getAllPostsThunk = () => async (dispatch) => {
   const res = await fetch("/api/posts");
+  const data = await res.json();
 
-  if (res.ok) {
-    const data = await res.json();
-    dispatch(getAllPostsAction(data));
-    return data;
-  } else {
-    const err = await res.json();
-    throw err;
-  }
+  dispatch(getAllPostsAction(data));
+  return data;
 };
 
 const initialState = [];
