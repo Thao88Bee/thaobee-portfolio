@@ -51,7 +51,9 @@ function Hero() {
           </div>
         </section>
       ) : (
-        <Admin heroImg={heroImg} />
+        <>
+          <Admin />
+        </>
       )}
     </>
   );

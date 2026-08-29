@@ -1,12 +1,14 @@
 :root {
   --background-color: rgb(255, 255, 255);
+  --btn-background-color: rgb(0, 0, 0);
   --btn-text-color: rgb(255, 255, 255);
   --text-color: rgb(0, 0, 0);
 }
 
 [data-theme="dark"] {
   --background-color: rgb(0, 0, 0);
-  --btn-text-color: rgb(255, 255, 255);
+  --btn-background-color: rgb(255, 255, 255);
+  --btn-text-color: rgb(0, 0, 0);
   --text-color: rgb(255, 255, 255);
 
   .lightMoon {
@@ -20,8 +22,8 @@ body {
 }
 
 button {
-  color: rgb(0, 128, 0);
-  background-color: rgb(255, 255, 255);
+  color: var(--btn-text-color);
+  background-color: var(--btn-background-color);
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -33,7 +35,6 @@ button {
     transform 200ms ease-in-out;
 
   &:hover {
-    color: rgb(255, 0, 0);
     transform: scale(1.05);
   }
 

@@ -17,12 +17,8 @@
     justify-content: center;
 
     :is(a) {
-      color: rgb(0, 128, 0);
+      color: var(--btn-text-color);
       text-decoration: none;
-    }
-
-    a:hover {
-      color: rgb(255, 0, 0);
     }
   }
 }

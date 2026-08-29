@@ -1,0 +1,36 @@
+.postSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 90dvh;
+  min-height: 500px;
+
+  :is(h1) {
+    text-align: center;
+  }
+}
+.postList {
+  padding: 10px 15px 0 40px;
+  margin: 0;
+  border: solid 2px;
+  border-radius: 5px;
+
+  :is(li) {
+    padding: 0;
+  }
+
+  :is(p) {
+    margin: 10px 0;
+  }
+}
+
+.postInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  :is(h2) {
+    margin: 0;
+  }
+}
