@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getAllPostsThunk } from "../../store/post";
+import { deletePostThunk, getAllPostsThunk } from "../../store/post";
 
 import "./Admin.css";
 
@@ -13,6 +13,12 @@ function Admin() {
     dispatch(getAllPostsThunk());
   }, [dispatch]);
 
+  const deletePost = async (e, postId) => {
+    e.preventDefault();
+    await dispatch(deletePostThunk(postId));
+    await dispatch(getAllPostsThunk());
+  };
+
   return (
     <section className="postSection">
       <h1>Messages</h1>
@@ -23,7 +29,7 @@ function Admin() {
               <h2>
                 {lastname}, {firstname}
               </h2>
-              <button>X</button>
+              <button onClick={(e) => deletePost(e, id)}>X</button>
             </div>
             <div className="postDateTimeContainer">
               <p>{new Date(createdAt).toLocaleDateString("en-US")}</p>

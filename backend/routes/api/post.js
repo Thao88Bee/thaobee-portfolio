@@ -2,6 +2,7 @@ const express = require("express");
 const { requireAuth } = require("../../utils/auth");
 const { check } = require("express-validator");
 const { handleValidationErrors } = require("../../utils/validation");
+const { adminEmail } = require("../../config");
 const { Post } = require("../../db/models");
 
 const router = express.Router();
@@ -51,6 +52,34 @@ router.post("/", validatePost, async (req, res) => {
     res.status(201).json({ message: "Review submitted successfully", newPost });
   } catch (error) {
     console.error("Error creating post:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+router.delete("/:postId", requireAuth, async (req, res) => {
+  try {
+    const userEmail = req.user.email;
+    const postId = parseInt(req.params.postId);
+    const post = await Post.findByPk(postId);
+
+    if (!post) {
+      return res.status(404).json({
+        message: "Post couldn't be found",
+      });
+    }
+
+    if (adminEmail !== userEmail) {
+      return res.status(403).json({
+        message: "Forbidden",
+      });
+    }
+
+    await post.destroy();
+    return res.json({
+      message: "Successfully deleted",
+    });
+  } catch (error) {
+    console.error("Error deleting post:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
