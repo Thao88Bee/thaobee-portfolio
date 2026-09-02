@@ -50,4 +50,8 @@
       outline: none;
     }
   }
+
+  :is(button) {
+    margin-top: 10px;
+  }
 }
