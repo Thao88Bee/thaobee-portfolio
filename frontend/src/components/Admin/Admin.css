@@ -34,3 +34,12 @@
     margin: 0;
   }
 }
+
+.dateTimeContainer {
+  display: flex;
+  gap: 50px;
+
+  :is(p) {
+    margin: 10px 0 0 0;
+  }
+}

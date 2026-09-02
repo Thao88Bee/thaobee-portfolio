@@ -16,7 +16,7 @@ function Admin() {
   return (
     <section className="postSection">
       <h1>Messages</h1>
-      {posts?.map(({ id, firstname, lastname, email, message }) => (
+      {posts?.map(({ id, firstname, lastname, email, message, createdAt }) => (
         <ul className="postList" key={id}>
           <li>
             <div className="postInfo">
@@ -24,6 +24,10 @@ function Admin() {
                 {lastname}, {firstname}
               </h2>
               <button>X</button>
+            </div>
+            <div className="dateTimeContainer">
+              <p>{new Date(createdAt).toLocaleDateString("en-US")}</p>
+              <p>{new Date(createdAt).toLocaleTimeString()}</p>
             </div>
             <p>{message}</p>
             <p>{email}</p>

@@ -4,10 +4,10 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import * as sessionActions from "./store/session";
 
 import Navigation from "./components/Navigation";
-import Hero from "./components/Hero/Hero";
-import Project from "./components/Project/Project";
-import Skill from "./components/Skill/Skill";
-import Contact from "./components/Contact/Contact";
+import Hero from "./components/Hero";
+import Skill from "./components/Skill";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 function Layout() {
   const dispatch = useDispatch();
@@ -35,15 +35,15 @@ const router = createBrowserRouter([
         path: "/",
         element: <Hero />,
       },
-            {
-        path: "/projects",
-        element: <Project />,
-      },
-            {
+      {
         path: "/skills",
         element: <Skill />,
       },
-            {
+      {
+        path: "/projects",
+        element: <Project />,
+      },
+      {
         path: "/contact",
         element: <Contact />,
       },

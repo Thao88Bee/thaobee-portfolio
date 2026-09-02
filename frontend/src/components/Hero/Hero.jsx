@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import Admin from "../Admin/Admin";
 import heroImg from "/hero-img.png";
+import Admin from "../Admin";
 
 import "./Hero.css";
 
