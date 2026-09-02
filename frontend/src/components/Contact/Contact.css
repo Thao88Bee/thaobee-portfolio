@@ -1,0 +1,43 @@
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  height: 90dvh;
+  min-height: 500px;
+
+  :is(h1, h2, p) {
+    margin: 0;
+  }
+}
+
+.formContainer {
+  :is(form) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  :is(label) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  :is(input) {
+    height: 25px;
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 5px;
+    padding-left: 5px;
+  }
+
+  :is(textarea) {
+    border-radius: 5px;
+    border: 2px solid rgb(59, 59, 59);
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+  }
+}
