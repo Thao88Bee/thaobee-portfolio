@@ -10,7 +10,8 @@
     text-align: center;
   }
 }
-.postList {
+
+.postInfo {
   padding: 10px 15px 0 40px;
   margin: 0;
   border: solid 2px;
@@ -25,7 +26,7 @@
   }
 }
 
-.postInfo {
+.postName {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,9 +34,13 @@
   :is(h2) {
     margin: 0;
   }
+
+  :is(button:hover) {
+    color: rgb(255, 0, 0);
+  }
 }
 
-.dateTimeContainer {
+.postDateTimeContainer {
   display: flex;
   gap: 50px;
 

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
   text-align: center;
-  height: 90dvh;
-  min-height: 500px;
+  gap: 20px;
+  margin-top: 75px;
+  margin-bottom: 50px;
 }
 
 .poultryCenter {
@@ -28,6 +28,10 @@
 
   :is(img) {
     height: 20dvh;
+  }
+
+  :is(h2) {
+    margin: 20px 0 0 0;
   }
 
   :is(p) {

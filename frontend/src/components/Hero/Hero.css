@@ -4,8 +4,13 @@
   justify-content: center;
   text-align: center;
   gap: 20px;
-  height: 90dvh;
-  min-height: 500px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+
+  .heroImgContainer {
+    display: flex;
+    justify-content: center;
+  }
 
   .heroImg {
     max-width: 200px;
