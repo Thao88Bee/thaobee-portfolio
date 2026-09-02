@@ -11,9 +11,9 @@
   :is(form) {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
     :is(label) {
       display: flex;

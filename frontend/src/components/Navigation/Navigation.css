@@ -6,7 +6,7 @@
 
   :is(button:hover) {
     .envelopeIcon {
-      color: green;
+      color: rgb(0, 128, 0);
     }
   }
 }

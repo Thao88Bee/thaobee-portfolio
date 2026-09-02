@@ -1,8 +1,8 @@
 .skillSection {
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   height: 90dvh;
   min-height: 500px;
 }

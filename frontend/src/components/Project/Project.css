@@ -1,7 +1,9 @@
 .projectSection {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
   height: 90dvh;
   min-height: 500px;
 }
