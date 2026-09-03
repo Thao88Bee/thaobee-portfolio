@@ -15,23 +15,31 @@
   .heroImg {
     max-width: 200px;
   }
-
-  :is(span) {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-
-    :is(a) {
-      color: var(--btn-text-color);
-      text-decoration: none;
-    }
-  }
 }
 
 .heroInfoContainer {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  :is(span) {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+
+    .githubLink {
+      color: var(--btn-background-color);
+    }
+
+    .linkedinLink {
+      color: #0a66c2;
+    }
+
+    :is(svg) {
+      height: 30px;
+      width: 30px;
+    }
+  }
 }
 
 .description {

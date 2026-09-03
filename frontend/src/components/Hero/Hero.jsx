@@ -1,6 +1,8 @@
 import { useSelector } from "react-redux";
 import heroImg from "/hero-img.png";
 import Admin from "../Admin";
+import { GrLinkedin } from "react-icons/gr";
+import { SiGithub } from "react-icons/si";
 
 import "./Hero.css";
 
@@ -22,25 +24,23 @@ function Hero() {
             <h1>Bee Thao</h1>
             <h2>Software Engineer</h2>
             <span>
-              <button>
-                <a
-                  href="https://www.github.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
-              </button>
+              <a
+              className="githubLink"
+                href="https://www.github.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <SiGithub />
+              </a>
               <br />
-              <button>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a>
-              </button>
+              <a
+                className="linkedinLink"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GrLinkedin />
+              </a>
             </span>
             <p className="description">
               A detail-oriented software engineer passionate about continuous
