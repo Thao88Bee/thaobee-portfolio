@@ -4,9 +4,10 @@
   align-items: center;
   padding: 10px 10px 0 10px;
 
-  :is(button:hover) {
+  .mailButton {
+    background-color: #2e7d32;
     .envelopeIcon {
-      color: rgb(0, 128, 0);
+      color: #efefef;
     }
   }
 }

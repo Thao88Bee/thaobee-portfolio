@@ -29,7 +29,12 @@ function Admin() {
               <h2>
                 {lastname}, {firstname}
               </h2>
-              <button onClick={(e) => deletePost(e, id)}>X</button>
+              <button
+                className="deleteButton"
+                onClick={(e) => deletePost(e, id)}
+              >
+                X
+              </button>
             </div>
             <div className="postDateTimeContainer">
               <p>{new Date(createdAt).toLocaleDateString("en-US")}</p>

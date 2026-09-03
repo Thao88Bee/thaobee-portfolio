@@ -43,7 +43,7 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <button onClick={toggleMenu}>
+      <button className="mailButton" onClick={toggleMenu}>
         <BsEnvelopePaper className="envelopeIcon" />
       </button>
       <ul className={ulClassName} ref={ulRef}>

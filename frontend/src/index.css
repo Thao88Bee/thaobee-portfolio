@@ -1,18 +1,18 @@
 :root {
-  --background-color: rgb(255, 255, 255);
-  --btn-background-color: rgb(0, 0, 0);
-  --btn-text-color: rgb(255, 255, 255);
-  --text-color: rgb(0, 0, 0);
+  --background-color: #efefef;
+  --btn-background-color: #121212;
+  --btn-text-color: #efefef;
+  --text-color: #121212;
 }
 
 [data-theme="dark"] {
-  --background-color: rgb(0, 0, 0);
-  --btn-background-color: rgb(255, 255, 255);
-  --btn-text-color: rgb(0, 0, 0);
-  --text-color: rgb(255, 255, 255);
+  --background-color: #121212;
+  --btn-background-color: #efefef;
+  --btn-text-color: #121212;
+  --text-color: #efefef;
 
   .lightMoon {
-    color: white;
+    color: #efefef;
   }
 }
 
