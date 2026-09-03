@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import heroImg from "/hero-img.png";
 import Admin from "../Admin";
-import { GrLinkedin } from "react-icons/gr";
 import { SiGithub } from "react-icons/si";
+import { GrLinkedin } from "react-icons/gr";
 
 import "./Hero.css";
 
@@ -25,7 +25,7 @@ function Hero() {
             <h2>Software Engineer</h2>
             <span>
               <a
-              className="githubLink"
+                className="githubLink"
                 href="https://www.github.com/"
                 target="_blank"
                 rel="noreferrer"

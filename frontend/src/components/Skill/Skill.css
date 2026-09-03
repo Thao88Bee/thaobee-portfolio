@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 }
 
-.languageList {
+.skillList {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -20,34 +20,53 @@
   align-items: center;
   gap: 10px;
 
+  :is(svg) {
+    height: 40px;
+    width: 40px;
+  }
+
   .javascriptIcon {
     color: #f7df1e;
     background-color: #121212;
-    height: 40px;
-    width: 40px;
   }
 
   .pythonIcon {
     color: #4b8bbe;
-    height: 40px;
-    width: 40px;
   }
 
   .sqlIcon {
     color: #00758f;
-    height: 40px;
-    width: 40px;
   }
 
   .htmlIcon {
     color: #e34c26;
-    height: 40px;
-    width: 40px;
   }
 
   .cssIcon {
     color: #264de4;
-    height: 40px;
-    width: 40px;
+  }
+
+  .reactIcon {
+    color: #61dbfb;
+  }
+
+  .nodeIcon {
+    color: #215732;
+  }
+
+  .reduxIcon {
+    color: #764abc;
+  }
+
+  .tailwindIcon {
+    color: #00d3f2;
+  }
+
+  .gitIcon {
+    color: #f1502f;
+  }
+
+  .sqlalchemyIcon {
+    color: #d71f00;
   }
 }
