@@ -23,6 +23,13 @@
   :is(svg) {
     height: 40px;
     width: 40px;
+    opacity: 0;
+    animation: slide-right 2s ease forwards;
+    transition: transform 1s ease;
+
+    &:hover {
+      transform: translate(-5px);
+    }
   }
 
   .javascriptIcon {
@@ -68,5 +75,22 @@
 
   .sqlalchemyIcon {
     color: #d71f00;
+  }
+
+  :is(p) {
+    opacity: 0;
+    animation: slide-right 2s ease forwards;
+    animation-delay: 2s;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
   }
 }
