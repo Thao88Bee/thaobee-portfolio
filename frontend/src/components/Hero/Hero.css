@@ -14,6 +14,18 @@
 
   .heroImg {
     max-width: 200px;
+    animation: slide-in 2s ease;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
