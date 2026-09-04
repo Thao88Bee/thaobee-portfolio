@@ -28,13 +28,30 @@
 
   :is(img) {
     height: 20dvh;
+    opacity: 0;
+    animation: slide-left 2s ease forwards;
   }
 
   :is(h2) {
     margin: 20px 0 0 0;
+    opacity: 0;
+    animation: slide-right 2s ease forwards;
   }
 
   :is(p) {
     width: 200px;
+    opacity: 0;
+    animation: slide-left 2s ease forwards;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
   }
 }
