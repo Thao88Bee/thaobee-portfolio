@@ -23,8 +23,7 @@
   :is(svg) {
     height: 40px;
     width: 40px;
-    opacity: 0;
-    animation: slide-right 2s ease forwards;
+    animation: slide-right 2s ease;
     transition: transform 1s ease;
 
     &:hover {
