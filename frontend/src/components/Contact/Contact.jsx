@@ -57,7 +57,7 @@ function Contact() {
     setHasSubmitted(false);
 
     if (getNewPost.message === undefined) {
-      alert(getNewPost.statusText);
+      alert("Bad Request");
     } else {
       dispatch(getAllPostsThunk());
       alert(getNewPost.message);
