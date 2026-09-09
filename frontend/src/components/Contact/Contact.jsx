@@ -48,7 +48,7 @@ function Contact() {
       message,
     };
 
-    await dispatch(createPostThunk(newPost));
+    const getNewPost = await dispatch(createPostThunk(newPost));
 
     setFirstname("");
     setLastname("");
@@ -56,7 +56,12 @@ function Contact() {
     setMessage("");
     setHasSubmitted(false);
 
-    dispatch(getAllPostsThunk());
+    if (getNewPost.message === undefined) {
+      alert(getNewPost.statusText);
+    } else {
+      dispatch(getAllPostsThunk());
+      alert(getNewPost.message);
+    }
   };
 
   return (
