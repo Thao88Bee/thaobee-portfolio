@@ -79,7 +79,7 @@
   :is(p) {
     opacity: 0;
     animation: slide-right 2s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1.2s;
   }
 }
 
