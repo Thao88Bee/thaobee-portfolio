@@ -1,6 +1,8 @@
 import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
 import { createPostThunk, getAllPostsThunk } from "../../store/post";
+import { useModal } from "../../context/Modal";
+import MessageModal from "./MessageModal";
 
 import "./Contact.css";
 
@@ -12,6 +14,7 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [validationErrors, setValidationErrors] = useState();
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const { setModalContent } = useModal();
 
   useEffect(() => {
     const errors = {};
@@ -57,10 +60,10 @@ function Contact() {
     setHasSubmitted(false);
 
     if (getNewPost.message === undefined) {
-      alert("Bad Request");
+      setModalContent(<MessageModal message={"Bad Request"} />);
     } else {
       dispatch(getAllPostsThunk());
-      alert(getNewPost.message);
+      setModalContent(<MessageModal message={getNewPost.message} />);
     }
   };
 
@@ -77,6 +80,7 @@ function Contact() {
               type="text"
               value={firstname}
               onChange={(e) => setFirstname(e.target.value)}
+              required
             />
           </label>
           <div className="error">
@@ -90,6 +94,7 @@ function Contact() {
               type="text"
               value={lastname}
               onChange={(e) => setLastname(e.target.value)}
+              required
             />
           </label>
           <div className="error">
@@ -103,6 +108,7 @@ function Contact() {
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </label>
           <div className="error">
@@ -116,6 +122,7 @@ function Contact() {
               type="text"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
           </label>
           <div className="error">

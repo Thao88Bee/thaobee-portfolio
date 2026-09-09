@@ -6,6 +6,8 @@ import LoginFormModal from "../LoginFormModal";
 import { BsEnvelopePaper } from "react-icons/bs";
 import OpenModalButton from "../OpenModalButton/OpenModalButton";
 
+import "./Navigation.css";
+
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();

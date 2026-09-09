@@ -66,6 +66,13 @@
   }
 }
 
+.messageAlert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
