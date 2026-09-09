@@ -49,7 +49,7 @@ router.post("/", validatePost, async (req, res) => {
       message,
     });
 
-    res.status(201).json({ message: "Review submitted successfully", newPost });
+    res.status(201).json({ message: "Post submitted successfully", newPost });
   } catch (error) {
     console.error("Error creating post:", error);
     res.status(500).json({ error: "Internal server error" });
