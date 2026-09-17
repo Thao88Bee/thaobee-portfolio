@@ -21,6 +21,12 @@ body {
   color: var(--text-color);
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 button {
   color: var(--btn-text-color);
   background-color: var(--btn-background-color);

@@ -1,10 +1,9 @@
 .projectSection {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   text-align: center;
-  gap: 20px;
-  margin-top: 75px;
+  gap: 60px;
   margin-bottom: 50px;
 }
 
@@ -42,6 +41,12 @@
     width: 200px;
     opacity: 0;
     animation: slide-left 2s ease forwards;
+  }
+}
+
+@media (width >= 800px) {
+  .projectSection {
+    margin-top: 50px;
   }
 }
 
