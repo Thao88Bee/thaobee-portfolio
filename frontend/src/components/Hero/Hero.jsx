@@ -26,7 +26,7 @@ function Hero() {
             <span>
               <a
                 className="githubLink"
-                href="https://www.github.com/"
+                href="https://github.com/Thao88Bee"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -35,7 +35,7 @@ function Hero() {
               <br />
               <a
                 className="linkedinLink"
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/bee-thao-336483330/"
                 target="_blank"
                 rel="noreferrer"
               >
