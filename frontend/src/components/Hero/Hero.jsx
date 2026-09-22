@@ -49,8 +49,13 @@ function Hero() {
               Excel at solving complex, high-stakes problems and am dedicated to
               continuous improvement.
             </p>
-            <a href={resume} download>
-              <button>Resume</button>
+            <a
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="beethao_resume"
+            >
+              <button>Download Resume</button>
             </a>
           </div>
         </section>
