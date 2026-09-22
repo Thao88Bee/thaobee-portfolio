@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import heroImg from "/hero-img.png";
+import resume from "/resume.pdf";
 import Admin from "../Admin";
 import { SiGithub } from "react-icons/si";
 import { GrLinkedin } from "react-icons/gr";
@@ -43,11 +44,14 @@ function Hero() {
               </a>
             </span>
             <p className="description">
-              A detail-oriented software engineer passionate about continuous
-              learning and staying at the forefront of technology. Excel at
-              solving complex, high-stakes problems and am dedicated to
+              I am a detail-oriented software engineer passionate about
+              continuous learning and staying at the forefront of technology.
+              Excel at solving complex, high-stakes problems and am dedicated to
               continuous improvement.
             </p>
+            <a href={resume} download>
+              <button>Resume</button>
+            </a>
           </div>
         </section>
       ) : (
