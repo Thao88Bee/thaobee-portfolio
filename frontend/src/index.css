@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --background-color: #efefef;
   --btn-background-color: #121212;
@@ -22,9 +27,9 @@ body {
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 button {

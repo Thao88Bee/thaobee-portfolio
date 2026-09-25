@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   text-align: center;
   gap: 60px;
-  margin-bottom: 50px;
+  margin-block: 50px;
 }
 
 .poultryCenter {
@@ -41,12 +41,6 @@
     width: 200px;
     opacity: 0;
     animation: slide-left 2s ease forwards;
-  }
-}
-
-@media (width >= 800px) {
-  .projectSection {
-    margin-top: 50px;
   }
 }
 
