@@ -4,7 +4,7 @@
   justify-content: center;
   text-align: center;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-block: 50px;
 
   .heroImgContainer {
     display: flex;
@@ -84,6 +84,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 0;
 
     .heroImg {
       max-width: 350px;
